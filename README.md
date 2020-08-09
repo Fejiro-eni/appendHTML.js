@@ -3,7 +3,7 @@ A hack to help append HTML constructed String to element in vanilla JS
 
 Using 
   
-  <pre>element.innerHTML += "<p>sample html string</p>";</pre>
+  <pre><code>element.innerHTML += "<p>sample html string</p>";</code></pre>
 
 would reset your dom element, 
 for example if you have a <form> element, the input would be reset,
@@ -11,7 +11,7 @@ also if your have added eventlisteners, they would be disabled, since it was jus
   
 to avoid this you might try using 
   
- <pre>element.append("<p>sample html string</p>);</pre>
+ <pre><code>element.append("<p>sample html string</p>);</code></pre>
 
 this would only append a string not a dom element.
 
@@ -19,3 +19,7 @@ So I decided to write a function to append strings as Html, hope you find this h
 
 to use 
 clone and link appendHTML.js to your document
+
+after that you can now do this...
+<pre><code>element.appendHTML("<p>sample html string</p>);</code></pre>
+to add a dom element constructed from a string
