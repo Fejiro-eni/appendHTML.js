@@ -16,3 +16,6 @@ to avoid this you might try using
 this would only append a string not a dom element.
 
 So I decided to write a function to append strings as Html, hope you find this helpful...
+
+to use 
+clone and link appendHTML.js to your document
