@@ -3,7 +3,7 @@ A hack to help append HTML constructed String to element in vanilla JS
 
 Using 
   
-  element.innerHTML += "<pre><p>sample html string</p></pre>";
+  <pre>element.innerHTML += "<p>sample html string</p>";</pre>
 
 would reset your dom element, 
 for example if you have a <form> element, the input would be reset,
@@ -11,7 +11,7 @@ also if your have added eventlisteners, they would be disabled, since it was jus
   
 to avoid this you might try using 
   
-  element.append("<pre><p>sample html string</p></pre>);
+ <pre>element.append("<p>sample html string</p>);</pre>
 
 this would only append a string not a dom element.
 
